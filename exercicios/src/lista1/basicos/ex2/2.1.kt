@@ -8,8 +8,5 @@ fun main() {
 
 fun ehPar(): Boolean {
     val num = Scanner(System.`in`).nextInt()
-    return when{
-        num % 2 == 0 -> true;
-        else -> false;
-    }
+    return num % 2 == 0
 }
