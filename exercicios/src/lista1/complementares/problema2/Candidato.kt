@@ -18,8 +18,8 @@ fun calculaMasculinos(candidatos: List<Candidato>): Int {
 
 fun calculaIdadeMediaHomensComExperiencia(candidatos: List<Candidato>): Double {
     val homensComExp = candidatos.filter { it.sexo == 'M' && it.temExperiencia };
-    val somaIdade = homensComExp.sumOf { it.idade };
-    return (somaIdade.div(homensComExp.size)).toDouble();
+    val somaIdade = homensComExp.sumOf { it.idade }.toDouble();
+    return (somaIdade/(homensComExp.size));
 }
 
 fun calculaPorcentagemHomens46ouMais(candidatos: List<Candidato>): Double{
